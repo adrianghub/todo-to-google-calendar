@@ -4,7 +4,6 @@ To do list with Google Calendar API integration.
 
 ```
 - node version > 14.17.0
-
 ```
 
 - Google API and get your own credentials
@@ -17,7 +16,7 @@ To do list with Google Calendar API integration.
 ## Install
 
 ```
-$ git clone git@github.com:adrianghub/todo-to-google-calendar.git
+$ git clone https://github.com/adrianghub/todo-to-google-calendar.git
 $ cd todo-to-google-calendar
 $ npm install
 $ npm start
