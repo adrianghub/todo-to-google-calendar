@@ -1,18 +1,130 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  background: linear-gradient(
+    180deg,
+    #fff 50%,
+    #000 100%
+  );
   min-height: 100vh;
+}
+.todo-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: start;
+  width: 520px;
+  background: #ffffff;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin: 32px 0;
+  color: #000;
+  font-size: 3rem;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  margin: 10px 0;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #000;
+  outline: none;
+  width: 320px;
+  background: transparent;
+}
+
+.todo-input::placeholder {
+  color: #333;
+}
+
+.todo-button {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #000;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(151, 114, 87) 0%,
+    rgb(255, 255, 255) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-text {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.todo-completed {
+  display: flex;
+  margin: 10px 0;
+}
+
+.todo-actions {
+  display: flex;
+}
+
+.todo-actions input, .todo-actions button {
+  margin: 0 10px;
+} 
+
+.todo-actions button {
+  padding: 10px;
 }
