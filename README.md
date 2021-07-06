@@ -3,7 +3,7 @@ To do list with Google Calendar API integration.
 ## Prerequisition
 
 ```
-- node version > 14.17.0
+node version > 14.17.0
 ```
 
 - Google API and get your own credentials
